@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,900&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Roboto:ital,wght@0,100;1,900&family=Smooch&display=swap');
+body{
+    font-family: sans-serif;
+    width:489px;
+    /* background-image: url("../Image/240_F_287413716_2VUdz9H5pvu4eObgN2l8dZNHSiO1DEx6.jpg"); */
+    background-size: cover;
+    color: black;
+    background-color: #e4e4e7;
+}
+.header{
+    /* max-width: 90rem;
+    margin: 0 auto; */
+    margin-bottom: 3rem;
+}
+
+.contact-container {
+    margin-top: 64px;
+}
+
+.logo{
+    width: 489px !important;
+    color:black;
+    font-family: 'Smooch';
+    margin-left: 0px;
+    font-size: 25px !important; 
+
+}
+.my{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 489px;
+    margin-bottom: 0px;
+    border-bottom: solid;
+    margin-bottom: 0px;
+    background-color: #1e40af;
+}
+.menu{
+    display: flex;
+    width: 455px;
+    list-style-type: none;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+}
+.menu li{
+    /* border-style: solid; */
+    list-style-type: none;
+    margin-bottom: 10px;
+    display:inline;
+    font-weight: bold;
+   
+}
+.menu li a{
+    text-decoration: none;
+    color:white;
+    transition: .4s;
+}
+.menu li a:hover{
+    color:black;
+}
+.current{
+    color: black;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e7;
+}
+.meee h1{
+    text-align: center;
+    font-family:sans-serif;
+    color: black;
+    word-spacing: 10px;
+    font-size:45px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.meee span{
+    color: #1e40af;
+    font-size: 45px;
+}
+.meee p{
+    width: 450px;
+    text-align: center;
+    color: black;
+    margin-left: 100px;
+}
+.me{
+    margin-left: 30px;
+    width: 489px;
+    display: grid;
+    justify-content: center;
+}
+.me img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+/* Home */
+.container{
+    background-color: #e4e4e7;
+}
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Blog-box{
+    width: 460px;
+}
+.blog1, .blog2{
+    padding: 10px;
+    width: 400px;
+}
+.blogimgs{
+    width: 473px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+.date{
+    color: black;
+    font-weight: bold;
+}
+.Blog-text{
+    color: black;
+    font-size: 0.9rem;
+    height: 200px;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    margin-bottom: 20px 0px;
+    box-shadow: 2px 2px 3px #1e40af;
+    padding: 10px;
+    width: 453px;
+}
+.button{
+    color: black;
+    font-weight: bold;
+    height: 40px;
+    margin: 5px;
+    box-shadow: 1px 1px 4px #1e40af;
+}
+.button:hover{
+    color: white; 
+}
+
+/* About me page */
+.whome{
+    /* border-style: solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ess p{
+    height: 250px;
+    overflow: scroll;
+}
+.image{
+    margin-left: 100px;
+}
+.image img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.activ{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.hobbie, .movie, .Music, .skill{
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hobbie ,.movie, .Music, .skill{
+    border-bottom: 4px solid #1e40af;
+}
+
+
+/* Blog*/
+.Blog-box{
+    width: 461px;
+}
+.blogger{
+    display: flex;
+    /* border-style: solid; */
+    width: 473px;
+    justify-content: start;
+    gap: 1rem;
+    border-bottom: solid;
+    background-color: #1e40af;
+}
+.blogger p{
+    font-size: 15px;
+}
+.blogger img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 10px;
+    border-color: black;
+}
+.date{
+    width: 310px;
+    margin-top: 10px;
+}
+.blog-container{
+    display: flex;
+    gap: 1rem;
+}
+.Blog-box{
+    width: 460px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.blog-img{
+    /* border-style: solid; */
+    width: 480px;
+    height: 300px;
+}
+.blogimgs{
+    width: 473px;
+    height: 300px;
+    /* border-style: solid; */
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.Blog-text .descr{
+    width: 400px;
+    height: 300px;
+    
+}
+.feedback{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.feedback img{
+    width: 25px;
+    height: 30px;
+}
+
+
+/* portfolio*/
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.portfolioBox{
+    /* border: 5px solid; */
+    width: 100%;
+    margin-bottom: 10px;
+    height: 450px;
+    box-shadow: 3px 3px 3px #1e40af;
+   
+
+}
+.portfolioBox img{
+    /* border: 5px solid; */
+    width: 100%;
+}
+/* contact */
+.form{
+    width:350px;
+    height: 498px;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%); */
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 4px #1e40af;
+}
+h2{
+    text-align: center;
+    color: black;
+    /* background-color: #64748b; */
+    padding: 7px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.form .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.form input, textarea{
+    margin: 10px 10px 10px 10px;
+    border: none;
+    border: 2px solid #1e40af;
+    width: 200px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    border-radius: 5px;
+}
+textarea{
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+}
+.form button{
+    background-color: #ff7200;
+    border-radius: 10px;
+    width: 230px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+.form input:focus{
+    outline: none;
+}
+.btn{
+    display: flex;
+    /* border: solid; */
+    justify-content: center;
+    align-items: center;
+
+}
+.form button{
+    width: 260px;
+    background-color: #1e40af;
+}
+.form button a{
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+button:hover{
+    background-color: #1e40af;
+}
+button a:hover{
+    color: white;
+}
+.socialmedia{
+    color: #64748b;
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialmedia .icon{
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    column-gap: 2px;
+}
+.socialmedia a img{
+    width: 30px;
+}
+.adrs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.phone, .addrs, .email{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 234px;
+    box-shadow: 2px 2px 4px #1e40af;
+
+}
+.adrsicon{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid;
+}
+.adress{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+iframe{
+    width: 489px;
+    height: 400px;
+}
+.map{
+    box-shadow: 2px 2px 4px #1e40af;
+}
+
+.footer{
+    background-color: #1e40af;
+    width: 489px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    border-top: solid;
+    border-bottom: solid;
+    margin-top: 10px;
+    width: 481px;
+    gap: 0px;
+}
+.logo{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    width: 481px;
+    justify-content: center;
+}
+.Sociallinks{
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+}
+.Sociallinks img{
+    width: 30px;
+
+}
+.social h4{
+    padding-right: 30px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    color: black;
+}

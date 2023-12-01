@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="Css/styles.css">
 </head>
 <body>
     <header class="header">
-        <h1 class="logo">Ermi T.</h1>
-        <nav>
-            <ul class="menu">
-                <li class="current"><a href="Index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Porfolio.html">Portfolio</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Ermiyas Tesfaye</h1>
-        <p>Hello, My name is Ermiyas Tesfaye. I am a software engineering student</p>
-        <img src="Image/avatar.png" alt="Ermi">
+        <div class="my">
+            <h1 class="logo">Ermi T.</h1>
+            <nav>
+                <ul class="menu">
+                    <li class="current"><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Porfolio.html">Portfolio</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="intro">
+            <div class="meee">
+                <h1>Ermiyas <span>Tesfaye</span></h1>
+                <p>Hello, My name is Ermiyas Tesfaye. I am a software engineering student</p>
+            </div>
+            <div class="me"> 
+                <img src="Image/Leonardo_Diffusion_XL_a_black_cool_cartoon_man_with_a_headset_3.jpg" alt="Ermi">
+            </div>
+        </div>
     </header>
     <main class="container">
         <div class="blog-container">
-            <section class="Blog-box">
+            <section class="Blog-box blog1">
                 <div class="blog-img">
-                    <img src="Image/web_development.jpg" alt="">
+                    <img class="blogimgs" src="Image/web_development.jpg" alt="">
                 </div>
-                <div class="Blog-text">
+                <div>
                     <span class="date">27 November 2023</span>
                     <p><a href="" class="Blog-title">Website development</a></p>
-                    <p>Web development is an ever-evolving field that encompasses the creation, design, and maintenance of websites and web applications. It involves a combination of technical skills, creativity, and problem-solving abilities to deliver engaging and functional online experiences.
+                </div>
+                <div class="Blog-text">
+                    <p class="descr">Web development is an ever-evolving field that encompasses the creation, design, and maintenance of websites and web applications. It involves a combination of technical skills, creativity, and problem-solving abilities to deliver engaging and functional online experiences.
 
                         At its core, web development revolves around coding languages such as HTML, CSS, and JavaScript, which are used to structure and style web pages and incorporate interactive elements. Developers also leverage frameworks and libraries like React, Angular, or Vue.js to streamline development processes and enhance user experiences.
                         
@@ -47,14 +58,16 @@
                         In conclusion, web development is a multifaceted discipline that combines technical skills, creativity, and problem-solving to create functional, visually appealing, and user-friendly websites and web applications. It is an exciting field that offers endless possibilities for innovation and growth in the digital landscape.</p>
                 </div>
             </section>
-            <section class="Blog-box">
+            <section class="Blog-box blog2">
                 <div class="blog-img">
-                    <img src="Image/AI.jpg" alt="AI">
+                    <img class="blogimgs" src="Image/AI.jpg" alt="AI">
                 </div>
-                <div class="Blog-text">
+                <div>
                     <span class="date">27 November 2023</span>
                     <p><a href="" class="Blog-title">Artificial Intelligence</a></p>
-                    <p>Artificial Intelligence (AI) is a transformative field of computer science that focuses on creating intelligent machines capable of performing tasks that typically require human intelligence. It encompasses various subfields such as machine learning, natural language processing, computer vision, and robotics, among others.
+                </div>
+                <div class="Blog-text">
+                    <p cls="descr">Artificial Intelligence (AI) is a transformative field of computer science that focuses on creating intelligent machines capable of performing tasks that typically require human intelligence. It encompasses various subfields such as machine learning, natural language processing, computer vision, and robotics, among others.
 
                         At its core, AI aims to develop algorithms and systems that can simulate human-like intelligence, enabling machines to perceive, reason, learn, and make decisions. This is achieved through the analysis of large datasets and the creation of models that can recognize patterns, extract meaningful insights, and make predictions or take actions based on the available information.
                         
@@ -65,26 +78,30 @@
                         However, AI also raises important ethical and societal considerations. Discussions around transparency, fairness, accountability, and privacy are essential to ensure responsible and ethical deployment of AI technologies. As AI continues to advance, it is crucial to establish frameworks and guidelines that promote the ethical use of AI and mitigate potential risks.
                         
                         The future of AI is promising, with ongoing research and development pushing the boundaries of what machines can achieve. As AI technologies evolve, they have the potential to solve complex problems, accelerate scientific discoveries, and shape the way we live and work. It is an exciting and rapidly evolving field that continues to captivate and inspire researchers, technologists, and innovators worldwide.</p>
-                    <a href="">View My Post</a>
                 </div>
             </section>    
         </div>
+        <button class="button"><a href="Blog.html">View My Recent Post</a></button>
     </main>
-    <footer>
-        <div class="logo">
-            <h4>Ermi T.</h4>
-            <p></p>
-        </div>
-        <div>
-            <h4>Follow Me</h4>
-            <div class="Social links">
-                <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png"></a>
-                <a href="https://www.instagram.com/ermi695/"><img src="Image/icons8-instagram-48.png"></a>
-                <a href="https://t.me/black6t"><img src="Image/icons8-telegram-48.png"></a>
-                <a href="https://www.linkedin.com/in/ermiyas-tesfaye-a96190253/"><img src="Image/icons8-linkedin-48.png"></a>
+    <footer class="footer">
+        <div class="foot">
+            <div class="logo">
+                <h4>Ermi T.</h4>
+                <p></p>
+            </div>
+            <div class="social">
+                <h4>Follow Me</h4>
+                <div class="Sociallinks">
+                    <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png"></a>
+                    <a href="https://www.instagram.com/ermi695/"><img src="Image/icons8-instagram-48.png"></a>
+                    <a href="https://t.me/black6t"><img src="Image/icons8-telegram-48.png"></a>
+                    <a href="https://www.linkedin.com/in/ermiyas-tesfaye-a96190253/"><img src="Image/icons8-linkedin-48.png"></a>
+                </div>
             </div>
         </div>
-        <p>&copy; CopyRight 2023</p>
+        <div class="end">
+            <p>&copy; Copyright 2023</p>
+        </div>
     </footer>
 </body>
 </html>
