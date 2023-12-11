@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="Css/styles.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="my">
-            <h1 class="logo">Ermi T.</h1>
+            <h1 class="my__logo">Ermi T.</h1>
             <nav>
-                <ul class="menu">
+                <ul class="my__menu">
                     <li><a href="Index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="Blog.html">Blog</a></li>
-                    <li><a class="current" href="Porfolio.html">Portfolio</a></li>
+                    <li><a href="Porfolio.html" id="my__menu__current">Portfolio</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="intro">
-            <div class="meee">
-                <h1>Ermiyas <span>Tesfaye</span></h1>
+            <div class="intro__meee">
+                <h1>Ermiyas Tesfaye</h1>
                 <p>Hello, My name is Ermiyas Tesfaye. I am a software engineering student</p>
             </div>
-            <div class="me"> 
-                <img src="Image/Leonardo_Diffusion_XL_a_black_cool_cartoon_man_with_a_headset_3.jpg" alt="Ermi">
+            <div class="intro__me"> 
+                <img src="Image/c.png" alt="Ermi">
             </div>
         </div>
     </header>
     <main class="container">
-        <div class="box1">
-            <div class="portfolioBox p1">
-                <div class="portfolioImage">
+        <div class="container__box1">
+            <div class="portfolio-box">
+                <div class="portfolio-box__portfolio-image">
                     <img src="Image/Screenshot 2023-11-27 184649.png" alt="1 page website">
                 </div>
-                <div class="redirect">
+                <div class="portfolio-box__redirect">
                     <h3>One page website</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consectetur
                         ipsam aliquam illum soluta beatae tempora non modi explicabo itaque tenetur ipsum quo quis maiores,
@@ -45,39 +45,11 @@
                     <button class="button">Continue reading</button>
                 </div>
             </div>
-            <div class="portfolioBox p2">
-                <div class="portfolioImage">
+            <div class="portfolio-box">
+                <div class="portfolio-box__portfolio-image">
                     <img src="Image/Screenshot 2023-11-27 184649.png" alt="1 page website">
                 </div>
-                <div class="redirect">
-                    <h3>One page website</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consectetur
-                        ipsam aliquam illum soluta beatae tempora non modi explicabo itaque tenetur ipsum quo quis maiores,
-                        cum totam? Eius, quaerat ea?
-                    </p>
-                    <button class="button">Continue reading</button>
-                </div>
-            </div>
-        </div>
-        <div class="box2">
-            <div class="portfolioBox p3">
-                <div class="portfolioImage">
-                    <img src="Image/Screenshot 2023-11-27 184649.png" alt="1 page website">
-                </div>
-                <div class="redirect">
-                    <h3>One page website</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consectetur
-                        ipsam aliquam illum soluta beatae tempora non modi explicabo itaque tenetur ipsum quo quis maiores,
-                        cum totam? Eius, quaerat ea?
-                    </p>
-                    <button class="button">Continue reading</button>
-                </div>
-            </div>
-            <div class="portfolioBox p4">
-                <div class="portfolioImage">
-                    <img src="Image/Screenshot 2023-11-27 184649.png" alt="1 page website">
-                </div>
-                <div class="redirect">
+                <div class="portfolio-box__redirect">
                     <h3>One page website</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consectetur
                         ipsam aliquam illum soluta beatae tempora non modi explicabo itaque tenetur ipsum quo quis maiores,
@@ -87,19 +59,46 @@
                 </div>
             </div>
         </div>
-        <div class="resume">
-            <button class="button"><a href="Image/Ermiyas_resume.pdf">Resume</a></button>
+        <div class="container__box2">
+            <div class="portfolio-box">
+                <div class="portfolio-image">
+                    <img src="Image/Screenshot 2023-11-27 184649.png" alt="1 page website">
+                </div>
+                <div class="portfolio-box__redirect">
+                    <h3>One page website</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consectetur
+                        ipsam aliquam illum soluta beatae tempora non modi explicabo itaque tenetur ipsum quo quis maiores,
+                        cum totam? Eius, quaerat ea?
+                    </p>
+                    <button class="button">Continue reading</button>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <div class="portfolio-image">
+                    <img src="Image/Screenshot 2023-11-27 184649.png" alt="1 page website">
+                </div>
+                <div class="portfolio-box__redirect">
+                    <h3>One page website</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consectetur
+                        ipsam aliquam illum soluta beatae tempora non modi explicabo itaque tenetur ipsum quo quis maiores,
+                        cum totam? Eius, quaerat ea?
+                    </p>
+                    <button class="button">Continue reading</button>
+                </div>
+            </div>
+        </div>
+        <div class="container__resume">
+            <a href="Image/Ermiyas_resume.pdf"><button class="button">Resume</button></a>
         </div>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="foot">
-            <div class="logo">
+            <div class="my__logo">
                 <h4>Ermi T.</h4>
-                <p></p>
             </div>
-            <div class="social">
+            <div class="foot__social">
                 <h4>Follow Me</h4>
-                <div class="Sociallinks">
+                <div class="foot__social__Sociallinks">
                     <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png"></a>
                     <a href="https://www.instagram.com/ermi695/"><img src="Image/icons8-instagram-48.png"></a>
                     <a href="https://t.me/black6t"><img src="Image/icons8-telegram-48.png"></a>
@@ -108,7 +107,7 @@
             </div>
         </div>
         <div class="end">
-            <p>&copy; CopyRight 2023</p>
+            <p>&copy; Copyright 2023</p>
         </div>
     </footer>
 </body>

@@ -3,49 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="Css/styles.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="my">
-            <h1 class="logo">Ermi T.</h1>
+            <h1 class="my__logo">Ermi T.</h1>
             <nav>
-                <ul class="menu">
+                <ul class="my__menu">
                     <li><a href="Index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
-                    <li><a class="current" href="Blog.html">Blog</a></li>
+                    <li><a href="Blog.html" id="my__menu__current">Blog</a></li>
                     <li><a href="Porfolio.html">Portfolio</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="intro">
-            <div class="meee">
-                <h1>Ermiyas <span>Tesfaye</span></h1>
+            <div class="intro__meee">
+                <h1>Ermiyas Tesfaye</h1>
                 <p>Hello, My name is Ermiyas Tesfaye. I am a software engineering student</p>
             </div>
-            <div class="me"> 
-                <img src="Image/Leonardo_Diffusion_XL_a_black_cool_cartoon_man_with_a_headset_3.jpg" alt="Ermi">
+            <div class="intro__me"> 
+                <img src="Image/c.png" alt="Ermi">
             </div>
         </div>
     </header>
     <main class="container">
-        <div class="blog-container">
-            <div class="blogsec1">
-                <section class="Blog-box blog1">
-                    <div class="blog-img">
+        <div class="container__blog">
+            <div class="blog sec1">
+                <section class="container__home__blog-box blog1">
+                    <div class=".container__home__blog-box__blog-img">
                         <img class="blogimgs" src="Image/web_development.jpg" alt="Web">
                     </div>
                     <div class="blogger">
                         <img src="Image/photo_2023-11-27_17-48-15.jpg" alt="Ermi">
-                        <p>Ermiyas Tesfaye</p>
+                        <div class="day">
+                            <p><a href="https://en.wikipedia.org/wiki/Web_development" class="Blog-title">Website development</a></p>
+                            <div class="date">November 27, 2023</div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="date">27 November 2023</div>
-                        <p><a href="https://en.wikipedia.org/wiki/Web_development" class="Blog-title">Website development</a></p>
-                    </div>
-                    <div class="Blog-text">
+                    <div class="container__home__blog-box__blog-text">
                         <p class="descr">Web development is an ever-evolving field that encompasses the creation, design, and maintenance of websites and web applications. It involves a combination of technical skills, creativity, and problem-solving abilities to deliver engaging and functional online experiences.
 
                             At its core, web development revolves around coding languages such as HTML, CSS, and JavaScript, which are used to structure and style web pages and incorporate interactive elements. Developers also leverage frameworks and libraries like React, Angular, or Vue.js to streamline development processes and enhance user experiences.
@@ -67,19 +66,18 @@
                         <img src="Image/icons8-comment-50.png">
                     </div>
                 </section>
-                <section class="Blog-box blog2">
-                    <div class="blog-img">
+                <section class="container__home__blog-box blog2">
+                    <div class="container__home__blog-box__blog-img">
                         <img  class="blogimgs" src="Image/AI.jpg" alt="AI">
                     </div>
                     <div class="blogger">
                         <img src="Image/photo_2023-11-27_17-48-15.jpg" alt="Ermi">
-                        <p>Ermiyas Tesfaye</p>
+                        <div class="day">
+                            <p><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="Blog-title">Artificial Intelligence</a></p>
+                            <div class="date">December 1, 2023</div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="date">27 November 2023</div>
-                        <p><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="Blog-title">Artificial Intelligence</a></p>
-                    </div>
-                    <div class="Blog-text">
+                    <div class="container__home__blog-box__blog-text">
                         <p class="descr">Artificial Intelligence (AI) is a transformative field of computer science that focuses on creating intelligent machines capable of performing tasks that typically require human intelligence. It encompasses various subfields such as machine learning, natural language processing, computer vision, and robotics, among others.
 
                             At its core, AI aims to develop algorithms and systems that can simulate human-like intelligence, enabling machines to perceive, reason, learn, and make decisions. This is achieved through the analysis of large datasets and the creation of models that can recognize patterns, extract meaningful insights, and make predictions or take actions based on the available information.
@@ -98,20 +96,19 @@
                     </div>
                 </section>
             </div>
-            <div class="blogsec2">
-                <section class="Blog-box blog3">
-                    <div class="blog-img">
+            <div class="blog sec2">
+                <section class="container__home__blog-box blog3">
+                    <div class="container__home__blog-box__blog-img">
                         <img class="blogimgs" src="Image/Cyber_security.jpg" alt="cyber">
                     </div>
                     <div class="blogger">
                         <img src="Image/photo_2023-11-27_17-48-15.jpg" alt="Ermi">
-                        <p>Ermiyas Tesfaye</p>
+                        <div class="day">
+                            <p><a href="https://en.wikipedia.org/wiki/Computer_security" class="Blog-title">Cyber Security</a></p>
+                            <div class="date">December 5, 2023</div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="date">27 November 2023</div>
-                        <p><a href="https://en.wikipedia.org/wiki/Computer_security" class="Blog-title">Cyber Security</a></p>
-                    </div>
-                    <div class="Blog-text">
+                    <div class="container__home__blog-box__blog-text">
                         <p class="descr">Cybersecurity is a critical discipline focused on protecting computer systems, networks, and digital data from unauthorized access, attacks, and breaches. With the increasing reliance on technology and the interconnected nature of our digital world, cybersecurity plays a vital role in safeguarding sensitive information, maintaining privacy, and ensuring the integrity and availability of digital assets.
 
                             The field of cybersecurity encompasses a wide range of practices, technologies, and strategies aimed at mitigating risks and defending against cyber threats. These threats can come in various forms, including malware, phishing attacks, ransomware, social engineering, and advanced persistent threats (APTs). Cybersecurity professionals employ a combination of preventive, detective, and responsive measures to counteract these threats and protect organizations and individuals from potential harm.
@@ -143,19 +140,18 @@
                         <img src="Image/icons8-comment-50.png">
                     </div>
                 </section>
-                <section class="Blog-box blog4">
-                    <div class="blog-img">
+                <section class="container__home__blog-box blog4">
+                    <div class="container__home__blog-box__blog-img">
                         <img class="blogimgs" src="Image/hacking.png" alt="hack">
                     </div>
                     <div class="blogger">
-                        <img class="blogimgs" src="Image/photo_2023-11-27_17-48-15.jpg" alt="Ermi">
-                        <p>Ermiyas Tesfaye</p>
+                        <img src="Image/photo_2023-11-27_17-48-15.jpg" alt="Ermi">
+                        <div class="day">
+                            <p><a href="https://en.wikipedia.org/wiki/Hacker" class="Blog-title">Hacking</a></p>
+                            <div class="date">December 9,  2023</div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="date">27 November 2023</div>
-                        <p><a href="https://en.wikipedia.org/wiki/Hacker" class="Blog-title">How to develop a website</a></p>
-                    </div>
-                    <div class="Blog-text">
+                    <div class="container__home__blog-box__blog-text">
                         <p class="descr">Hacking refers to the unauthorized access, manipulation, or exploitation of computer systems, networks, or digital resources. It is important to note that hacking can be both malicious and illegal when performed without proper authorization or in violation of computer crime laws. However, there is also a legitimate field of ethical hacking, known as "penetration testing" or "white-hat hacking," which involves authorized individuals testing systems for vulnerabilities in order to improve security.
 
                             Malicious hacking involves individuals or groups with malicious intent seeking to gain unauthorized access to systems or networks for various purposes, such as stealing sensitive information, causing disruption, or committing fraud. These malicious hackers, known as "black-hat hackers," employ various techniques and tools to exploit vulnerabilities in software, systems, or human behavior. This can include exploiting weak passwords, software vulnerabilities, social engineering tactics, or employing sophisticated attack methods.
@@ -167,7 +163,6 @@
                             It is crucial to distinguish between illegal hacking and ethical hacking. Engaging in unauthorized hacking activities can result in severe legal consequences, including criminal charges and penalties. Organizations should always seek proper authorization and engage reputable and skilled professionals when conducting ethical hacking or security assessments.
                             
                             In summary, hacking encompasses both malicious and ethical activities. Malicious hacking involves unauthorized access and exploitation of computer systems with malicious intent, while ethical hacking is a controlled and authorized practice aimed at identifying vulnerabilities for the purpose of improving security. Promoting cybersecurity awareness, implementing robust security measures, and adhering to legal and ethical guidelines are essential in safeguarding against hacking attempts and protecting digital assets.</p>
-                        </div>
                     </div>
                     <div class="feedback">
                         <img src="Image/icons8-heart-50.png">
@@ -177,15 +172,14 @@
             </div>     
         </div>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="foot">
-            <div class="logo">
+            <div class="my__logo">
                 <h4>Ermi T.</h4>
-                <p></p>
             </div>
-            <div class="social">
+            <div class="foot__social">
                 <h4>Follow Me</h4>
-                <div class="Sociallinks">
+                <div class="foot__social__Sociallinks">
                     <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png"></a>
                     <a href="https://www.instagram.com/ermi695/"><img src="Image/icons8-instagram-48.png"></a>
                     <a href="https://t.me/black6t"><img src="Image/icons8-telegram-48.png"></a>
@@ -194,7 +188,7 @@
             </div>
         </div>
         <div class="end">
-            <p>&copy; CopyRight 2023</p>
+            <p>&copy; Copyright 2023</p>
         </div>
     </footer>
 </body>

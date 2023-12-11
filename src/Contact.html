@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="Css/styles.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="my">
-            <h1 class="logo">Ermi T.</h1>
+            <h1 class="my__logo">Ermi T.</h1>
             <nav>
-                <ul class="menu">
+                <ul class="my__menu">
                     <li><a href="Index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="Blog.html">Blog</a></li>
                     <li><a href="Porfolio.html">Portfolio</a></li>
-                    <li><a class="current" href="Contact.html">Contact</a></li>
+                    <li><a href="Contact.html" id="my__menu__current">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="intro">
-            <div class="meee">
-                <h1>Ermiyas <span>Tesfaye</span></h1>
+            <div class="intro__meee">
+                <h1>Ermiyas Tesfaye</h1>
                 <p>Hello, My name is Ermiyas Tesfaye. I am a software engineering student</p>
             </div>
-            <div class="me"> 
-                <img src="Image/Leonardo_Diffusion_XL_a_black_cool_cartoon_man_with_a_headset_3.jpg" alt="Ermi">
+            <div class="intro__me"> 
+                <img src="Image/c.png" alt="Ermi">
             </div>
         </div>
     </header>
-    <main class="container contact-container">
-        <div class="form">
+    <main class="container">
+        <div class="container__form">
             <h2>Contact me</h2>
-            <div class="inputs">
+            <div class="container__form__inputs">
                 <input  id="name-input" type="text" name="name" placeholder="Enter your name"><br />
                 <input  id="email-input" type="email" name="name" placeholder="Enter your email"><br />
-                <textarea id="message-area" name=""placeholder="Message"></textarea> <br />
+                <textarea id="message-area" name="name" placeholder="Message"></textarea> <br />
             </div>
             <div class="btn">
-                <button><a href="">Send message</a></button>
+                <button class="button"><a href="">Send message</a></button>
             </div>
-            <div class="socialmedia">
+            <div class="container__form__socialmedia">
                 <h2>Social media</h2>
                     <div class="icon">
                         <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png" alt=""></a>
@@ -52,7 +52,7 @@
             </div>
         </div>
         <!--Adress info-->
-        <section class="adrs">
+        <section class="container__adrs">
             <div class="phone">
                 <div class="adrsicon">
                     <img src="Image/icons8-phone-48.png" alt="">
@@ -82,15 +82,14 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.7353992499725!2d38.81271290893002!3d8.99439610023895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8529104deb3f%3A0x5c21c9179739aebf!2zUm9iYSBCYWtlcnkgfCBHZXJqaSB8IOGIruGJoyDhi7PhiaYg4YiY4YyL4YyI4Yiq4YurIHwg4YyI4Yit4YyC!5e1!3m2!1sen!2set!4v1701100487250!5m2!1sen!2set" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="foot">
-            <div class="logo">
+            <div class="my__logo">
                 <h4>Ermi T.</h4>
-                <p></p>
             </div>
-            <div class="social">
+            <div class="foot__social">
                 <h4>Follow Me</h4>
-                <div class="Sociallinks">
+                <div class="foot__social__Sociallinks">
                     <a href="https://www.facebook.com/ermiyas.tesfaye.7545"><img src="Image/icons8-facebook-48.png"></a>
                     <a href="https://www.instagram.com/ermi695/"><img src="Image/icons8-instagram-48.png"></a>
                     <a href="https://t.me/black6t"><img src="Image/icons8-telegram-48.png"></a>
@@ -99,7 +98,7 @@
             </div>
         </div>
         <div class="end">
-            <p>&copy; CopyRight 2023</p>
+            <p>&copy; Copyright 2023</p>
         </div>
     </footer>
 </body>
