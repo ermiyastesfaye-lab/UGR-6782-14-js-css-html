@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
     <header>
         <div class="my">
             <h1 class="my__logo">Ermi T.</h1>
             <nav>
-                <ul class="my__menu">
-                    <li><a href="Index.html">Home</a></li>
+                <ul class="my__sidebar">
+                    <li onclick = hideSidebar()><a href="#"><svg id="close-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#B9BCC2"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="Index.html" id="my__menu__current">Home</a></li>
                     <li><a href="About.html">About</a></li>
-                    <li><a href="Blog.html" id="my__menu__current">Blog</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
                     <li><a href="Porfolio.html">Portfolio</a></li>
                     <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <ul class="my__menu">
+                    <li><a href="Index.html" class="hide-On-mobile" id="my__menu__current">Home</a></li>
+                    <li><a href="About.html" class="hide-On-mobile">About</a></li>
+                    <li><a href="Blog.html" class="hide-On-mobile">Blog</a></li>
+                    <li><a href="Porfolio.html" class="hide-On-mobile">Portfolio</a></li>
+                    <li><a href="Contact.html" class="hide-On-mobile">Contact</a></li>
+                    <li onclick = showSidebar()><a href="#"><svg id="open-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#B9BCC2"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
         </div>
@@ -62,7 +73,7 @@
                             In conclusion, web development is a multifaceted discipline that combines technical skills, creativity, and problem-solving to create functional, visually appealing, and user-friendly websites and web applications. It is an exciting field that offers endless possibilities for innovation and growth in the digital landscape.</p>
                     </div>
                     <div class="feedback">
-                        <img src="Image/icons8-heart-50.png">
+                        <button class="like-button"><i class="fa-solid fa-heart"></i></button>
                         <img src="Image/icons8-comment-50.png">
                     </div>
                 </section>
@@ -91,7 +102,7 @@
                             The future of AI is promising, with ongoing research and development pushing the boundaries of what machines can achieve. As AI technologies evolve, they have the potential to solve complex problems, accelerate scientific discoveries, and shape the way we live and work. It is an exciting and rapidly evolving field that continues to captivate and inspire researchers, technologists, and innovators worldwide.</p>
                     </div>
                     <div class="feedback">
-                        <img src="Image/icons8-heart-50.png">
+                        <button class="like-button"><i class="fa-solid fa-heart"></i></button>
                         <img src="Image/icons8-comment-50.png">
                     </div>
                 </section>
@@ -136,7 +147,7 @@
                             As technology continues to advance, the importance of cybersecurity will only grow, making it an indispensable field in our digital age.</p>
                     </div>
                     <div class="feedback">
-                        <img src="Image/icons8-heart-50.png">
+                        <button class="like-button"><i class="fa-solid fa-heart"></i></button>
                         <img src="Image/icons8-comment-50.png">
                     </div>
                 </section>
@@ -165,7 +176,7 @@
                             In summary, hacking encompasses both malicious and ethical activities. Malicious hacking involves unauthorized access and exploitation of computer systems with malicious intent, while ethical hacking is a controlled and authorized practice aimed at identifying vulnerabilities for the purpose of improving security. Promoting cybersecurity awareness, implementing robust security measures, and adhering to legal and ethical guidelines are essential in safeguarding against hacking attempts and protecting digital assets.</p>
                     </div>
                     <div class="feedback">
-                        <img src="Image/icons8-heart-50.png">
+                        <button class="like-button"><i class="fa-solid fa-heart"></i></button>
                         <img src="Image/icons8-comment-50.png">
                     </div>
                 </section>
@@ -191,5 +202,6 @@
             <p>&copy; Copyright 2023</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

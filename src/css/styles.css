@@ -18,6 +18,10 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
+header{
+    width: 100%;
+    overflow: hidden;
+}
 .my{
     display: flex;
     align-items: flex-end;
@@ -49,12 +53,14 @@ body::-webkit-scrollbar{
     display:inline;
     font-weight: bold;
     font-size: 20px;
+    width: 100%;
    
 }
 .my__menu li a{
     text-decoration: none;
     color:white;
     transition: .4s;
+    width: 100%;
 }
 .my__menu li a:hover{
     background: linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0));
@@ -72,16 +78,46 @@ body::-webkit-scrollbar{
     color: transparent;
     
 }
+.my__sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: #252d51;
+    /* background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 200% 200%; */
+    padding: 20px;
+    transition: all .15s linear;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.my__sidebar li{
+    width: 100%;
+    list-style-type: none;
+}
+.my__sidebar li a{
+    width: 100%;
+}
+
 .intro{
     display: flex;
     justify-content: flex-start;
     padding-top: 15px;
     padding-left: 10px;
+    width: 100%;
     
 }
 .intro__meee{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    overflow: hidden;
 
 }
 .intro__meee h1{
@@ -95,16 +131,20 @@ body::-webkit-scrollbar{
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block;
+    -webkit-user-drag: 100%;
 }
 .intro__meee p{
     text-align: left;
     padding-left: 3px;
+    width: 100%;
 }
 .intro__me{
     width: 1000px;
     display: flex;
     justify-content: flex-end;
     margin: 10px;
+    width: 100%;
+    overflow: hidden;
 }
 .intro__me img{
     width: 370px;
@@ -116,6 +156,7 @@ body::-webkit-scrollbar{
 .container__home{
     display: flex;
     gap: 2rem;
+    width: 100%;
 }
 .container__home__blog-box{
     width: 100%;
@@ -195,9 +236,13 @@ body::-webkit-scrollbar{
 
 
 /* About me page */
+.container{
+    width: 100%;
+}
 .container__about{
     display: flex;
     gap: 1rem;
+    width: 100%;
 }
 .container__about__ess h2{
     border-bottom: solid;
@@ -213,11 +258,14 @@ body::-webkit-scrollbar{
     position: relative;
     transition: all .15s linear;
     margin-left: 10px;
+    width: 100%;
+    overflow: hidden;
 }
 .container__about__ess p{
     height: 250px;
     overflow: scroll;
     padding: 10px;
+    width: 100%;
 }
 .container__about__ess p::-webkit-scrollbar{
     display: none;
@@ -225,10 +273,12 @@ body::-webkit-scrollbar{
 .container__about__image{
     margin-left: 100px;
     padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 .container__about__image img{
-    width: 320px;
-    height: 320px;
+    width: 50%;
+    /* height: 320px; */
     border-radius: 50%;
     margin: 10px;
 }
@@ -239,7 +289,6 @@ body::-webkit-scrollbar{
     margin-bottom: 30px;
     padding-bottom: 10px;
     width: 100%;
-    /* border: solid; */
 }
 .container__activ__hobbie, .container__activ__movie, .container__activ__Music, .container__activ__skill{
     padding: 5px;
@@ -248,6 +297,7 @@ body::-webkit-scrollbar{
     flex-direction: column;
     align-items: center;
     border-right: 4px solid;
+    overflow: hidden;
 }
 .container__activ__skill{
     border-right: none;
@@ -257,7 +307,7 @@ body::-webkit-scrollbar{
     display: flex;
 }
 .container__activ h2{
-    border-bottom: solid;
+    text-decoration: underline;
     border-radius: 0;
 }
 
@@ -280,10 +330,13 @@ body::-webkit-scrollbar{
     justify-content: flex-start;
     gap: 1rem;
     border-bottom: solid;
+    width: 100%;
+    overflow: hidden;
 }
 .day{
     font-size: 15px;
     margin: 10px;
+    width: 100%;
 }
 .blogger img{
     margin: 5px;
@@ -320,11 +373,30 @@ body::-webkit-scrollbar{
     display: flex;
     justify-content: space-between;
     margin: 10px;
+    overflow: hidden;
 }
 .feedback img{
     width: 25px;
     height: 30px;
 }
+.like-button{
+    width: 25px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+}
+.fa-solid.fa-heart{
+    transition: color 0.2s ease;
+}
+.like-button:hover{
+    cursor: pointer;
+}
+.like-button:active{
+    scale: 0.95;
+    transition: 10s;
+}
+
 
 
 /* portfolio*/
@@ -332,6 +404,10 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    overflow: hidden;
+}
+.container__box1{
+    overflow: hidden;
 }
 .portfolio-box{
     background: linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0));
@@ -342,23 +418,30 @@ body::-webkit-scrollbar{
     padding: 10px;
     position: relative;
     transition: all .15s linear;
+    overflow: hidden;
+    
 }
 .portfolio-box img{
     width: 100%;
     border-radius: 5px;
+    overflow: hidden;
 }
 .portfolio-box__redirect{
     padding: 10px;
+    overflow: hidden;
 }
 .portfolio-box__redirect h3{
     border-bottom: solid;
     padding: 10px;
+    overflow: hidden;
 }
 .portfolio-box__redirect p{
     padding: 10px;
+    overflow: hidden;
 }
 .portfolio-box__redirect button{
    width: 25%;
+   overflow: hidden;
 }
 .container__box1, .container__box2{
     display: flex;
@@ -375,19 +458,21 @@ body::-webkit-scrollbar{
 
 
 /* contact */
+.container{
+    width: 100%;
+}
 .container__form{
-     margin: auto;
+    margin: auto;
     background: linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0));
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 200% 200%;
     border-radius: 30px;
     max-width: 340px;
-    min-width: 340px;
     padding: 20px;
     position: relative;
     transition: all .15s linear;
-    
+    width: 100%;
 }
 h2{
     text-align: center;
@@ -396,19 +481,21 @@ h2{
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
     font-size: 20px;
+    width: 100%;
 }
 .container__form .container__form__inputs{
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
+    width: 100%;
 
 }
 .container__form input, textarea{
     margin: 10px 10px 10px 10px;
     border: none;
     border: 2px solid #B9BCC2;
-    width: 200px;
+    width:100%;
     background-color: transparent;
     font-size: 16px;
     color: white;
@@ -417,7 +504,7 @@ h2{
     padding: 5px;
 }
 textarea{
-    width: 200px;
+    width: 100%;
     height: 100px;
     border-radius: 5px;
 }
@@ -440,7 +527,11 @@ textarea::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
+}
+a{
+    text-decoration: none;
 }
 .form button a{
     color: white;
@@ -452,12 +543,14 @@ textarea::placeholder{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .container__form__socialmedia .icon{
     display: flex;
     justify-content: space-evenly;
-    width: 400px;
+    width: 100%;
     column-gap: 2px;
+
 }
 .container__form__socialmedia a img{
     width: 30px;
@@ -474,8 +567,10 @@ textarea::placeholder{
     background-repeat: no-repeat;
     background-size: 200% 200%;
     border-radius: 30px;
-    max-width: 340px;
-    min-width: 340px;
+    /* max-width: 340px;
+    min-width: 340px; */
+    width: 100%;
+    margin: 30px;
     padding: 20px;
     position: relative;
     transition: all .15s linear;
@@ -485,11 +580,13 @@ textarea::placeholder{
     justify-content: center;
     border-bottom: solid;
     padding: 10px;
+    width: 100%;
 }
 .adress{
     color: black;
     font-weight: bold;
     text-align: center;
+    width: 100%;
 }
 .adress p{
     display: flex;
@@ -498,26 +595,38 @@ textarea::placeholder{
     font-size: 15px;
     color: white;
     padding: 10px;
+    width: 100%;
 }
-a{
+.adress p a{
     text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 iframe{
     width: 100%;
     height: 400px;
+}
+.error-text{
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+
 }
 
 
 /* footer */
 .foot{
     display: flex;
-    /* border-top: solid; */
     border-bottom: solid;
     height: 150px;
     margin-top: 30px;
+    width: 100%;
+    overflow: hidden;
 }
 .my__logo{
-    width: 45px;
+    width: 100%;
 }
 .my__logo h4{
     color: white;
@@ -525,7 +634,7 @@ iframe{
 .foot__social{
     display: flex;
     flex-direction: column;
-    width: 1415px;
+    width: 100%;
     align-items: flex-end;
     margin: 10px;
     gap: 2rem;
@@ -538,7 +647,7 @@ iframe{
 .foot__social__Sociallinks{
     display: flex;
     justify-content: space-evenly;
-    width: 400px;
+    width: 100%;
     margin-top: 10px;
 }
 .foot__social__Sociallinks img{
@@ -551,21 +660,23 @@ iframe{
     color: white;
     font-weight: bold;
     margin: 10px;
+    overflow: hidden;
 }
 
 
 /* Responsiveness */
 @media screen and (max-width: 482px){
     .my{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 100%;
+        padding-left: 0;
+        display: flex;
+        align-items: flex-start;
     }
     .my__logo{
         width: 100%;
         font-family: 'Smooch';
-    
+        padding-bottom: 0;
+        margin-left: -5px;
     }
     .my__menu{
         width: 100%;
@@ -578,7 +689,26 @@ iframe{
         margin-bottom: 10px;
         font-size: 15px;
         margin-left: 1.25rem;
+
        
+    }
+    .hide-On-mobile{
+        display: none;
+    }
+    #open-menu{
+        width: 45px;
+        height: 50px;
+        /* margin-top: 30px; */
+    }
+
+    #open-menu:hover{
+        background-color: none;
+        transition: none;
+    }
+    #close-menu{
+        width: 45px;
+        height: 50px;
+    
     }
     .intro{
         display: flex;
@@ -621,9 +751,16 @@ iframe{
         display: flex;
         flex-direction: column;
     }
+    .container__about__image{
+        padding: 10px;
+
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
     .container__about__image img{
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        height: auto;
     }
     .container__activ{
         display: flex;
@@ -669,7 +806,14 @@ iframe{
 
 
     /* contact */
-    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container__form{
+        padding: 10px;
+    }
     .container__form .container__form__inputs{
         display: flex;
         flex-direction: column;
@@ -684,7 +828,7 @@ iframe{
         width: 100%;
     }
     .phone, .addrs, .email{
-        width: 234px;
+        width: 100%;
         padding: 10px;
         margin-bottom: 20px;
     }
@@ -703,8 +847,6 @@ iframe{
     .my__logo{
         font-size: 25px;
         display: flex;
-        justify-content: center;
-        margin-left: 0;
     }
     .foot__social{
         display: flex;
@@ -727,21 +869,46 @@ iframe{
         padding-top: 5px;
     }
     .my{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 100%;
+        padding-left: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+    .my__logo {
+        font-size: 25px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0;
     }
     .my__menu{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
     }
     .my__menu li{
         margin-bottom: 10px;
         font-size: 15px;
-        margin-left: 30px;
-       
+        margin-left: 1.25rem;
+    }
+    .hide-On-mobile{
+        display: none;
+    }
+    #open-menu{
+        width: 45px;
+        height: 50px;
+        /* margin-top: 30px; */
+    }
+
+    #open-menu:hover{
+        background-color: none;
+        transition: none;
+    }
+    #close-menu{
+        width: 45px;
+        height: 50px;
+    
     }
     .intro{
         display: flex;
@@ -861,12 +1028,6 @@ iframe{
         height: 180px;
         gap: 0px;
     }
-    .my__logo{
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-    }
     .foot__social{
         display: flex;
         flex-direction: column;
@@ -892,23 +1053,24 @@ iframe{
         padding-top: 5px;
         
     }
-    .menu{
+    .my__menu{
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         margin: 0;
+        /* padding: 10px; */
     }
-    .menu li{
+    .my__menu li{
         margin-bottom: 10px;
         font-size: 15px;
         margin-left: 80px;
        
     }
-    .me{
+    .intro__me{
         width: 100%;
         margin-left: 30px;
     }
-    .me img{
+    .intro__me img{
         width: 300px;
         height: 300px;
     }
